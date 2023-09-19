@@ -1,0 +1,138 @@
+.navbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #013914;
+  color: white;
+  transition: 0.5s all ease;
+  position: sticky;
+  z-index: 999;
+  top: 0;
+
+  &.active {
+    background-color: white;
+    color: black;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+    width: 1400px;
+    padding: 20px 0;
+    .logo {
+      font-size: 34px;
+      font-weight: bold;
+      .text {
+      }
+      .dot {
+        color: #1dbf73;
+      }
+    }
+    .search {
+      justify-content: space-between;
+      display: flex;
+      align-items: center;
+      background-color: white;
+      border-radius: 5px;
+      overflow: hidden;
+      width: 50%;
+      border: 1px solid gray;
+      .search-input {
+        display: flex;
+        justify-content: center;
+        padding: 5px;
+        gap: 10px;
+        width: 50%;
+        input {
+          width: 100%;
+          border: none;
+          outline: none;
+          padding-left: 10px;
+
+          &::placeholder {
+            color: gray;
+            font-weight: 500;
+            padding-left: 10px;
+          }
+        }
+      }
+      button {
+        background-color:   rgb(56, 56, 56);
+        border: none;
+        align-self: flex-end;
+        color: white;
+        height: 50px;
+        width: 70px;
+        cursor: pointer;
+
+        img {
+          width: 20px;
+          color: white;
+        }
+      }
+    }
+    .links {
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      font-weight: 500;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      span {
+      }
+      .user {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 5px;
+        position: relative;
+        cursor: pointer;
+        
+        .options {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          gap: 10px;
+          position: absolute;
+          right: 0;
+          top: 40px;
+          width: 150px;
+          background-color: #817f7f;
+          border-radius: 5px;
+          padding: 10px 0;
+        }
+        img {
+          width: 34px;
+          height: 34px;
+          border-radius: 50%;
+        }
+      }
+      button {
+        color: white;
+        border-radius: 5px;
+        padding: 10px 20px;
+        border: 1px solid white;
+        background-color: transparent;
+        cursor: pointer;
+
+        &:hover {
+          background-color: rgb(36, 175, 36);
+        }
+      }
+    }
+  }
+  hr {
+    border-top: 0.5px solid lightgray;
+    border-bottom: 0.5px solid lightgray;
+    width: 100%;
+  }
+  .menu {
+    display: flex;
+    // flex-direction: row;
+    justify-content: space-between;
+    width: 1400px;
+    padding: 10px 0;
+    color: lightgray;
+    font-weight: 300;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+  }
+}
